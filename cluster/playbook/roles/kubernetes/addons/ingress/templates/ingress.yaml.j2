@@ -189,7 +189,7 @@ subjects:
 ---
 
 apiVersion: apps/v1
-kind: Deployment
+kind: DaemonSet
 metadata:
   name: nginx-ingress-controller
   namespace: ingress-nginx
@@ -197,7 +197,6 @@ metadata:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx
 spec:
-  replicas: 3
   selector:
     matchLabels:
       app.kubernetes.io/name: ingress-nginx
@@ -298,16 +297,18 @@ metadata:
     app.kubernetes.io/part-of: ingress-nginx
 spec:
   externalTrafficPolicy: Local
-  type: LoadBalancer
+  type: NodePort
   ports:
     - name: http
       port: 80
-      targetPort: 80
       protocol: TCP
+      targetPort: http
+      nodePort: 32080
     - name: https
       port: 443
-      targetPort: 443
       protocol: TCP
+      targetPort: https
+      nodePort: 32443
   selector:
     app.kubernetes.io/name: ingress-nginx
     app.kubernetes.io/part-of: ingress-nginx

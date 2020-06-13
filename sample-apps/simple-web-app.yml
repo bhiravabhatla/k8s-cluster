@@ -1,0 +1,54 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple-web-app
+  labels:
+    app: simple-web-app
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: simple-web-app
+      labels:
+        app: simple-web-app
+    spec:
+      containers:
+        - name: simple-web-app
+          image: seqvence/static-site
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: simple-web-app
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple-web-app
+spec:
+  selector:
+    app: simple-web-app
+  ports:
+    - port: 80
+  type: ClusterIP
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: simple-web-app
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: app.ronoroa.org
+      http:
+        paths:
+          - backend:
+              serviceName: simple-web-app
+              servicePort: 80
+            path: /simple-web-app
+  tls:
+    - secretName: app-tls
+      hosts:
+        - app.ronoroa.org

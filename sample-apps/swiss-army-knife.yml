@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: swiss-army
+  labels:
+    app: swiss-army
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: swiss-army
+      labels:
+        app: swiss-army
+    spec:
+      containers:
+        - name: swiss-army
+          image: leodotcloud/swiss-army-knife
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: swiss-army
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: swiss-army
+spec:
+  selector:
+    app: swiss-army
+  ports:
+    - port: 80
+  type: ClusterIP
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: swiss-army-knife
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: app.ronoroa.org
+      http:
+        paths:
+          - backend:
+              serviceName: swiss-army
+              servicePort: 80
+            path: /swiss-army
+  tls:
+    - secretName: app-tls
+      hosts:
+        - app.ronoroa.org

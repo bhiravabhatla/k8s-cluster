@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ui-web
+  labels:
+    app: ui-web
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: ui-web
+      labels:
+        app: ui-web
+    spec:
+      containers:
+        - name: ui-web
+          image: nginx
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: ui-web
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ui-web
+spec:
+  selector:
+    app: ui-web
+  ports:
+    - port: 80
+  type: ClusterIP
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ui-web
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+    - host: app.ronoroa.org
+      http:
+        paths:
+          - path: /ui
+            backend:
+                serviceName: ui-web
+                servicePort: 80
+  tls:
+    - secretName: app-tls
+      hosts:
+        - app.ronoroa.org

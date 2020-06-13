@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2de1c55c-4deb-4e96-8cec-2f170227b875" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/k8s-cluster.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample-apps/simple-web-app.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample-apps/swiss-army-knife.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sample-apps/ui-web.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.cert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.key" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster.do.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster.do.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster.vb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster.vb.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cluster/playbook/roles/kubernetes/addons/ingress/templates/ingress.yaml.j2" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/playbook/roles/kubernetes/addons/ingress/templates/ingress.yaml.j2" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bhTlBKZszYVkSu7fOWy4SvEbLZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample-apps" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2de1c55c-4deb-4e96-8cec-2f170227b875" name="Default Changelist" comment="" />
+      <created>1589083474273</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589083474273</updated>
+      <workItem from="1589083477541" duration="2353000" />
+      <workItem from="1589292823933" duration="753000" />
+      <workItem from="1589609384986" duration="4117000" />
+      <workItem from="1589689521458" duration="1301000" />
+      <workItem from="1591016511480" duration="22000" />
+      <workItem from="1591016546230" duration="12624000" />
+      <workItem from="1591253479858" duration="794000" />
+      <workItem from="1591285793204" duration="724000" />
+      <workItem from="1591940035716" duration="6772000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
