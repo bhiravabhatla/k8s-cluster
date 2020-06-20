@@ -4,6 +4,6 @@
 *.log
 .envrc
 .env
-.idea/*
+.idea
 .envrc-E
 cluster.yaml
