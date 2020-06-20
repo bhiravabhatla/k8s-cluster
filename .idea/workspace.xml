@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2de1c55c-4deb-4e96-8cec-2f170227b875" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/k8s-cluster.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample-apps/simple-web-app.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample-apps/swiss-army-knife.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample-apps/ui-web.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.cert" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server.key" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster.do.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster.do.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster.vb.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cluster.vb.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cluster/playbook/roles/kubernetes/addons/ingress/templates/ingress.yaml.j2" beforeDir="false" afterPath="$PROJECT_DIR$/cluster/playbook/roles/kubernetes/addons/ingress/templates/ingress.yaml.j2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vagrantfile" beforeDir="false" afterPath="$PROJECT_DIR$/Vagrantfile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +74,9 @@
       <workItem from="1591016546230" duration="12624000" />
       <workItem from="1591253479858" duration="794000" />
       <workItem from="1591285793204" duration="724000" />
-      <workItem from="1591940035716" duration="6772000" />
+      <workItem from="1591940035716" duration="7182000" />
+      <workItem from="1592628340848" duration="607000" />
+      <workItem from="1592654394877" duration="1666000" />
     </task>
     <servers />
   </component>

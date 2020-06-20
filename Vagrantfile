@@ -95,4 +95,8 @@ Vagrant.configure('2') do |config|
     puts 'choose provider by running "make use.digitalocean" or "make use.virtualbox"'
     abort
   end
+  config.vm.define "ingress-nginx" do |server|
+    config.vm.box = "bhiravabhatla/rhel7.7_nginx"
+    config.vm.box_version = "1.0.0"
+  end
 end
